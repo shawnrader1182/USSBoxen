@@ -69,7 +69,7 @@ github "hipchat",       "1.1.3"
 github "phpstorm",      "1.0.6"
 github "tunnelblick",   "1.0.7"
 github "jmeter",        "0.1.5"
-mod "rstudio", "0.0.3", :github_tarball => "taoistmath/puppet-rstudio"
+github "rstudio",       "1.0.0", :repo => "taoistmath/puppet-rstudio"
 
 #Helios/Verified Additions
 #github "mongodb", "2.6.1"

@@ -146,7 +146,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: taoistmath/puppet-rstudio
   specs:
-    rstudio (0.0.3)
+    rstudio (1.0.0)
 
 DEPENDENCIES
   boxen (= 3.7.0)
@@ -170,7 +170,7 @@ DEPENDENCIES
   phpstorm (= 1.0.6)
   pkgconfig (= 1.0.0)
   repository (= 2.3.0)
-  rstudio (= 0.0.3)
+  rstudio (= 1.0.0)
   ruby (= 8.1.7)
   stdlib (= 4.2.1)
   sublime_text (= 1.0.1)
