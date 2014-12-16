@@ -59,3 +59,36 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "chrome",        "1.2.0"
+github "firefox",       "1.1.9"
+github "sublime_text",  "1.0.1"
+github "virtualbox",    "1.0.13"
+github "vagrant",       "3.0.8"
+github "hipchat",       "1.1.3"
+github "phpstorm",      "1.0.6"
+github "tunnelblick",   "1.0.7"
+github "jmeter",        "0.1.5"
+mod "rstudio", "0.0.3", :github_tarball => "taoistmath/puppet-rstudio"
+
+#Helios/Verified Additions
+#github "mongodb", "2.6.1"
+
+## PHP module
+#github "php", "1.2.6"
+#github "wget", "1.0.1"
+#github "libtool", "1.0.0"
+#github "pkgconfig", "1.0.0"
+#github "pcre", "1.0.0"
+#github "libpng", "1.0.0"
+#github "caffeine", "1.0.0"
+#github "mumble", "1.0.5"
+
+
+
+
+
+
+
+
+

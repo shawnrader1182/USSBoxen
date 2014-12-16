@@ -57,11 +57,32 @@ node default {
   include git
   include hub
   include nginx
+ 
+  #Custom Includes:
+  include sublime_text::v2
+  sublime_text::v2::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  }
+  include chrome
+  include firefox
+  include googledrive
+  include virtualbox
+  class { 'vagrant': }
+  include hipchat
+  include apache
+  include phpstorm
+  include tunnelblick
+  include jmeter
+  include rstudio
+  
+  #Helios/Verified Additions
+  #include mongodb
+  
 
   # fail if FDE is not enabled
-  if $::root_encrypted == 'no' {
-    fail('Please enable full disk encryption and try again')
-  }
+#  if $::root_encrypted == 'no' {
+#    fail('Please enable full disk encryption and try again')
+#  }
 
   # node versions
   nodejs::version { 'v0.6': }
@@ -88,4 +109,36 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+#  repository { 
+#InfraSys:
+#  'salt-config':
+#    provider => git,
+#    source => "${boxen::config::login}/salt-config",
+#    path => "${boxen::config::srcdir}/temp/salt-config";
+#  'jenkins-jobs':
+#    provider => git,
+#    source => "${boxen::config::login}/jenkins-jobs",
+#    path => "${boxen::config::srcdir}/temp/jenkins-jobs",
+
+# Helios/Verified:
+#  'helios':
+#    provider => git,
+#    source => "${boxen::config::login}/helios",
+#    path => "${boxen::config::srcdir}/temp/helios",
+#  'verified':
+#    provider => git,
+#    source => "${boxen::config::login}/verified",
+#    path => "${boxen::config::srcdir}/temp/verified",
+
+# Phoenix:
+#  'phoenix':
+#    provider => git,
+#    source => "dand/phoenix",
+#    path => "${boxen::config::srcdir}/temp/phoenix",
+
+#  }
+
+
+
 }
