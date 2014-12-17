@@ -68,7 +68,6 @@ node default {
   include virtualbox
   class { 'vagrant': }
   include hipchat
-  include apache
   include phpstorm
   include tunnelblick
   include jmeter
