@@ -66,7 +66,9 @@ node default {
   include chrome
   include firefox
   include virtualbox
-  class { 'vagrant': }
+  class { 'vagrant': 
+    version => '1.4.0'
+  }
   include hipchat
   include phpstorm
   include tunnelblick
@@ -118,22 +120,6 @@ node default {
 #    provider => git,
 #    source => "${boxen::config::login}/jenkins-jobs",
 #    path => "${boxen::config::srcdir}/projects/jenkins-jobs",
-
-# Helios/Verified:
-#  'helios':
-#    provider => git,
-#    source => "${boxen::config::login}/helios",
-#    path => "${boxen::config::srcdir}/Sites/helios",
-#  'verified':
-#    provider => git,
-#    source => "${boxen::config::login}/verified",
-#    path => "${boxen::config::srcdir}/Sites/verified",
-
-# Phoenix:
-#  'phoenix':
-#    provider => git,
-#    source => "dand/phoenix",
-#    path => "${boxen::config::srcdir}/projects/phoenix",
 
 #  }
 

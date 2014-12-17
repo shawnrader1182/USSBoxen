@@ -114,16 +114,6 @@ GITHUBTARBALL
     tunnelblick (1.0.7)
 
 GITHUBTARBALL
-  remote: boxen/puppet-vagrant
-  specs:
-    vagrant (3.0.8)
-
-GITHUBTARBALL
-  remote: boxen/puppet-virtualbox
-  specs:
-    virtualbox (1.0.13)
-
-GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
@@ -147,6 +137,16 @@ GITHUBTARBALL
   remote: taoistmath/puppet-rstudio
   specs:
     rstudio (1.0.0)
+
+GITHUBTARBALL
+  remote: taoistmath/puppet-vagrant
+  specs:
+    vagrant (3.2.2)
+
+GITHUBTARBALL
+  remote: taoistmath/puppet-virtualbox
+  specs:
+    virtualbox (1.0.14)
 
 DEPENDENCIES
   boxen (= 3.7.0)
@@ -176,7 +176,7 @@ DEPENDENCIES
   sublime_text (= 1.0.1)
   sudo (= 1.0.0)
   tunnelblick (= 1.0.7)
-  vagrant (= 3.0.8)
-  virtualbox (= 1.0.13)
+  vagrant (= 3.2.2)
+  virtualbox (= 1.0.14)
   xquartz (= 1.2.1)
 

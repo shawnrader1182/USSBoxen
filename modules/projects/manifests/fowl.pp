@@ -1,5 +1,7 @@
 class projects::fowl {
 
+  #include projects::phoenix
+
   # Clone the repos
   repository {
   'fowl':

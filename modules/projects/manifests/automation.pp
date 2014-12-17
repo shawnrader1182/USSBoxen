@@ -1,6 +1,7 @@
 class projects::automation {
 
 include projects::fowl
+include projects::helios
 	
   # Clone the repos
   repository {
