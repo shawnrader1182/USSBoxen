@@ -72,7 +72,7 @@ github "virtualbox",    "1.0.14", :repo => "taoistmath/puppet-virtualbox"
 github "vagrant",       "3.2.2",  :repo => "taoistmath/puppet-vagrant"
 
 #Helios/Verified Additions
-#github "mongodb", "2.6.1"
+github "mongodb", "2.6.1"
 
 ## PHP module
 #github "php", "1.2.6"

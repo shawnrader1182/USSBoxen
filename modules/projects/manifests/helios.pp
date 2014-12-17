@@ -1,5 +1,7 @@
 class projects::helios {
 
+include mongodb
+
   # Clone the repos
   helios {
   'helios':
