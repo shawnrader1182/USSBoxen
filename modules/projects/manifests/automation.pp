@@ -7,11 +7,11 @@ include projects::fowl
   'tarantula':
     provider => git,
     source => "${boxen::config::login}/tarantula",
-    path => "${boxen::config::srcdir}/temp/tarantula";
+    path => "${boxen::config::srcdir}/Sites/tarantula";
   'jehp':
     provider => git,
     source => "${boxen::config::login}/jehp",
-    path => "${boxen::config::srcdir}/temp/jehp",
+    path => "${boxen::config::srcdir}/Sites/jehp",
   }
 
 

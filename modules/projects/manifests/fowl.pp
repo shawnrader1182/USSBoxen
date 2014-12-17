@@ -5,7 +5,7 @@ class projects::fowl {
   'fowl':
     provider => git,
     source => "${boxen::config::login}/fowl",
-    path => "${boxen::config::srcdir}/temp/fowl",
+    path => "${boxen::config::srcdir}/projects/fowl",
   }
 
 
